@@ -40,16 +40,15 @@ nav ul li a:hover {
 
 
 section {
-    padding: 20px;
+    padding: 20px;    
 }
 
 footer {
     background: #023e8a;
     color: white;
     padding: 10px;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+    text-align: center;
 }
 
 #paisagem{
@@ -74,4 +73,38 @@ footer {
 
 .on {
     color: #ffcc00;
+}
+
+.duas-colunas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as colunas */
+    padding: 20px;
+}
+
+.coluna {
+    flex: 1;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+}
+
+.direita {
+    
+}
+
+#viagens{
+    width: 300px;
+    height: auto;
+}
+
+
+.titulodotexto{
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 2px;
 }
