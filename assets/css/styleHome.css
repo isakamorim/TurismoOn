@@ -8,7 +8,10 @@ body {
 header {
     background: #0077b6;
     color: white;
-    padding: 20px;
+    padding-top: 30px;
+    top:0;
+    left: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -38,6 +41,14 @@ nav ul li a:hover {
     color: #ffcc00; /*altera a cor ao passar o cursor*/
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    background: #0077b6;
+    color: white;
+    left: 0;
+    top: 0;
+}
 
 section {
     padding: 20px;    
@@ -49,6 +60,7 @@ footer {
     padding: 10px;
     width: 100%;
     text-align: center;
+
 }
 
 #paisagem{
