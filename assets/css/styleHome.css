@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,6 +13,7 @@ header {
     top:0;
     left: 0;
     width: 100%;
+    
 }
 
 nav ul {
@@ -48,6 +50,11 @@ nav{
     color: white;
     left: 0;
     top: 0;
+    display: flex;
+    
+}
+nav img{
+    width: 10%;
 }
 
 section {
