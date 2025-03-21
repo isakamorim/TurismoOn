@@ -1,11 +1,77 @@
+/*NAV DAS PAGINAS*/
 header {
     background: #0077b6;
     color: white;
-    padding: 2px;
+    padding-top: 70px;
+    top:0;
+    left: 0;
+    width: 100%;
 }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2); /* Aumenta 20% */
+    color: #ffcc00; /*altera a cor ao passar o cursor*/
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background: #0077b6;
+    color: white;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    align-items: center;
+    height: 80px;
+    
+}
+nav img{
+    width: 7%;
+    height: auto;
+    margin-top: 36px;
+}
+
+section {
+    padding: 20px;    
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*TEXTO NO HEADER*/
 .logo {
     font-family: 'Baloo 2', cursive;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: 2px;
     color: #ffcc00; /* Cor principal */
@@ -20,7 +86,9 @@ header {
     color: #ffcc00;
 }
 
+/*-----------------------------------------------------------------------*/
 
+/*FOOTER*/
 footer {
     background: #023e8a;
     color: white;
@@ -41,12 +109,17 @@ h2{
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
+/*-----------------------------------------------------------------------*/
+
+/*FOTOS DOS DONOS*/
 .container {
     display: flex;
     justify-content: center; 
-    gap: 3px; 
+    gap: 40px; 
 }
 figure {
     text-align: center;
@@ -61,6 +134,8 @@ figcaption {
     height: 190px;
     border-radius: 20%;
 }
+
+/*-----------------------------------------------------------------------*/
 
 /*TEXTO SOBRE NÓS*/ 
 
@@ -87,7 +162,7 @@ figcaption {
     line-height: 1.8;
 }
 
-
+/*-----------------------------------------------------------------------*/
 
 /*NOSSA HISTÓRIA*/
 .timeline {
@@ -114,3 +189,5 @@ figcaption {
     margin-right: 10px;
     color: #0077b6;
 }
+
+/*-----------------------------------------------------------------------*/
