@@ -160,6 +160,10 @@ body{
     border-bottom: 2px solid #0077b6;
     display: block;
   }
+  a.foto {
+    text-decoration: none;
+    color: inherit;
+  }
   
   .descricao {
     padding: 10px;
