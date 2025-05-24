@@ -1,18 +1,39 @@
-/*NAV DAS PAGINAS*/
-header {
-    background: #0077b6;
-    color: white;
-    padding-top: 70px;
-    top:0;
-    left: 0;
-    width: 100%;
-}
-
-*{
-    margin:0;
+/* Reset e estrutura */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 100px; /* espaço para o header fixo */
+    background-color: #ffffff;
+}
+
+/* NAV (cabeçalho fixo) */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0077b6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    z-index: 1000;
+    padding: 1px;
+}
+
+nav img {
+    width: 7%;
+    height: auto;
+    margin-top: 36px;
 }
 
 nav ul {
@@ -37,97 +58,40 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    transform: scale(1.2); /* Aumenta 20% */
-    color: #ffcc00; /*altera a cor ao passar o cursor*/
-}
-
-nav{
-    position: fixed;
-    width: 100%;
-    background: #0077b6;
-    color: white;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    align-items: center;
-    height: 80px;
-    
-}
-nav img{
-    width: 7%;
-    height: auto;
-    margin-top: 36px;
-}
-
-section {
-    padding: 20px;    
-}
-
-/*-----------------------------------------------------------------------*/
-
-/*TEXTO NO HEADER*/
-.logo {
-    font-family: 'Baloo 2', cursive;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #ffcc00; /* Cor principal */
-    
-}
-
-.turismo {
-    color: white; 
-}
-
-.on {
+    transform: scale(1.2);
     color: #ffcc00;
 }
 
-/*-----------------------------------------------------------------------*/
-
-/*FOOTER*/
-footer {
-    background: #023e8a;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-
-h1{
+/* Título da página */
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
     text-align: center;
     color: #023e8a;
-}
-h2{
-
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    overflow-x: hidden;
-    padding-top: 80px; /* Ajuste conforme a altura do header */
-    
-      
-}
-
-/*-----------------------------------------------------------------------*/
-
-.titulo {
-    font-size: 30px;
-    margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #0077b6;
-    text-align: center;
-    padding-top: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.titulo::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: #ffcc00;
+    margin: 15px auto 0;
+    border-radius: 10px;
   }
+
+/* Container para os comentários */
+.container-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 60px 20px;
+}
+
 /* Comentários */
 .comentario {
     display: flex;
@@ -135,50 +99,81 @@ body{
     background-color: #f9f9f9;
     border-radius: 10px 60px 30px;
     padding: 20px;
-    margin: 20px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s;
-    padding-top: 50px;
+    margin-bottom: 40px;
+}
 
-    
-  }
-  
-  .comentario:hover {
+.comentario:hover {
     transform: scale(1.01);
-  }
-  
-  .foto-perfil img {
+}
+
+.foto-perfil img {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
-  }
-  
-  .content .nome {
+}
+
+.content .nome {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
     color: #333;
-  }
-  
-  .content .localizacao {
+}
+
+.content .localizacao {
     font-size: 14px;
     color: #888;
     margin-top: -4px;
     margin-bottom: 8px;
     padding-top: 7px;
-  }
-  
-  .content .mensagem {
+}
+
+.content .mensagem {
     font-size: 16px;
     color: #555;
     margin: 10px 0;
     line-height: 1.5;
-  }
-  
-  .content .data {
+}
+
+.content .data {
     font-size: 12px;
     color: #aaa;
-  }
-  
+}
+
+/* Footer */
+footer {
+    background: #023e8a;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Header estilizado */
+header {
+    background: #0077b6;
+    color: white;
+    padding-top: 70px;
+    width: 100%;
+}
+
+/* Texto estilizado (caso queira usar) */
+.logo {
+    font-family: 'Baloo 2', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffcc00;
+}
+
+.turismo {
+    color: white;
+}
+
+.on {
+    color: #ffcc00;
+}
